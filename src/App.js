@@ -1,6 +1,7 @@
 import "./App.css";
 
-import { ConnectButton, Web3Modal } from "@web3modal/react";
+import { Web3Modal } from "@web3modal/react";
+import { WalletConnectButton } from "./components/WalletConnectButton";
 
 const config = {
   projectId: process.env.REACT_APP_WALLETCONNECT_PROJECTID,
@@ -15,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <ConnectButton />
+        <WalletConnectButton />
         <Web3Modal config={config} />
         <a
           className="App-link"
